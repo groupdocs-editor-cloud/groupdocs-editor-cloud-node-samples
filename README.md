@@ -22,7 +22,7 @@ The package contains Node.js examples. Follow the given steps to proceed run:
 
 * Extract the downloaded project
 * Edit RunExamples.js and put appSid and appKey, obtained from [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud) there
-* Go to root directory of the project
+* Go to "Examples" directory of the project
 * Execute "npm install" command
 * Execute "npm update" command
 * Run examples using "npm run-script start" command
