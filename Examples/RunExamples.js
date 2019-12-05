@@ -9,8 +9,8 @@ global.serializer_1 = require("groupdocs-editor-cloud/lib/serializer");
 
 //TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
 
-global.appSid = "961234b6-aa74-40c2-a0c0-9d6e2ff92eab";
-global.appKey = "a1b6c8aa82e0cc3fc642b4bc0e1d38b2";
+global.appSid = "XXXX-XXXX-XXXX-XXXX";
+global.appKey = "XXXXXXXXXXXXXXXX";
 global.myStorage = "First Storage";
 
 // construct EditApi
@@ -35,6 +35,21 @@ async function examples() {
 
     // Get Document Info
     await require('./GetDocumentInfo').Run();
+
+    //  Edit word processing document
+    await require('./EditOperations/EditWordProcessingDocument').Run();
+
+    //  Edit word processing document
+    await require('./EditOperations/EditSpreadsheetDocument').Run();    
+
+    //  Edit presentation document    
+    await require('./EditOperations/EditPresentationDocument').Run();     
+
+    //  Edit DSV (Delimiter-separated values) document
+    await require('./EditOperations/EditDsvDocument').Run();      
+
+    //  Edit DSV (Delimiter-separated values) document
+    await require('./EditOperations/EditTextDocument').Run();       
 }
 
 examples();
