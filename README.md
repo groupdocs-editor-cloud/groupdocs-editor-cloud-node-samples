@@ -27,7 +27,7 @@ The package contains Node.js examples. Follow the given steps to proceed run:
 * Execute "npm update" command
 * Run examples using "npm run-script start" command
 
-For more details, visit  [Getting Started](https://docs.groupdocs.cloud/display/editorcloud/Getting+Started).
+For more details, visit  [Getting Started](https://docs.groupdocs.cloud/editor/getting-started/).
 
 ## Licensing
 All GroupDocs.Editor Cloud SDKs are licensed under [MIT License](LICENSE).
