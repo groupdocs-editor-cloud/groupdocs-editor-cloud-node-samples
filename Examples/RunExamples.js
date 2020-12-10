@@ -7,23 +7,26 @@ global.serializer_1 = require("groupdocs-editor-cloud/lib/serializer");
 ////          GroupDocs.Editor Cloud API Examples
 //// ***********************************************************
 
-//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+//TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
 
-global.appSid = "XXXX-XXXX-XXXX-XXXX";
-global.appKey = "XXXXXXXXXXXXXXXX";
+global.clientId = "XXXX-XXXX-XXXX-XXXX";
+global.clientSecret = "XXXXXXXXXXXXXXXX";
 global.myStorage = "First Storage";
 
+const config = new conversion_cloud.Configuration(clientId, clientSecret);
+config.apiBaseUrl = "https://api.groupdocs.cloud";
+
 // construct EditApi
-global.editApi = editor_cloud.EditApi.fromKeys(appSid, appKey);
+global.editApi = editor_cloud.EditApi.fromConfig(config);
 
 // construct InfoApi
-global.infoApi = editor_cloud.InfoApi.fromKeys(appSid, appKey);
+global.infoApi = editor_cloud.InfoApi.fromConfig(config);
 
 // construct FileApi
-global.fileApi = editor_cloud.FileApi.fromKeys(appSid, appKey);
+global.fileApi = editor_cloud.FileApi.fromConfig(config);
 
 // construct StorageApi
-global.storageApi = editor_cloud.StorageApi.fromKeys(appSid, appKey);
+global.storageApi = editor_cloud.StorageApi.fromConfig(config);
 
 async function examples() {
 
