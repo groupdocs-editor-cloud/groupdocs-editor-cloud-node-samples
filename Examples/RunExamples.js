@@ -13,7 +13,7 @@ global.clientId = "XXXX-XXXX-XXXX-XXXX";
 global.clientSecret = "XXXXXXXXXXXXXXXX";
 global.myStorage = "First Storage";
 
-const config = new conversion_cloud.Configuration(clientId, clientSecret);
+const config = new editor_cloud.Configuration(clientId, clientSecret);
 config.apiBaseUrl = "https://api.groupdocs.cloud";
 
 // construct EditApi
