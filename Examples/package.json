@@ -7,7 +7,7 @@
     "name": ""
   },
   "dependencies": {
-    "groupdocs-editor-cloud": "^23.11.0"
+    "groupdocs-editor-cloud": "^25.7.0"
   },
   "scripts": {
     "start": "node RunExamples.js"
